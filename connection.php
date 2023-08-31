@@ -1,5 +1,6 @@
+
 <?php
-$con=new mysqli('localhost', 'root','','crud operation');
+$con=new mysqli('localhost', 'root','','medical');
 
 if($con){
 
