@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+ <i class="fas fa-arrow-up"></i>
+ <p style="color:blue">teacher arrow to back
+    <title>Menu Icon Demo</title>
+    <style>
+        /* Styling for the menu icon (hamburger) */
+        .menu-icon {
+            width: 40px;
+            height: 30px;
+            position: absolute;
+            top: 30px;
+            right: 10px;
+            cursor: pointer;
+            color: blue;
+        }
+
+        /* Styling for the hamburger lines */
+        .menu-icon div {
+            width: 30px;
+            height: 4px;
+            background-color: blue;
+            margin: 6px 0;
+        }
+
+        /* Styling for the menu list */
+        .menu-list {
+            display: none;
+            position: absolute;
+            top: 1px;
+            left: 10px;
+            background-color:yellow;
+            padding: 10px;
+            border: 1px solid #ccc;
+            min-width: 150px;
+        }
+
+        /* Styling for menu list items */
+        .menu-list li {
+            list-style-type: none;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+
+        /* Styling for the result container */
+        .result-container {
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 10px;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            min-width: 150px;
+        }
+
+        /* Styling for the optional result links */
+        .optional-link {
+            color:blue;
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+        img {
+               border-radius: 150px;
+        }
+    </style>
+</head>
+<body style="background-color: pink;"><center>
+    <h1 style="color: blue;">WELCOME STUDENT</h1>
+    <img src="d.jpg" alt="" width="30%"></center>
+    <div class="menu-icon" onclick="toggleMenu()">
+           select
+        <div ></div>
+        <div></div>
+        <div></div>
+    </div>
+    <ul class="menu-list" id="menuList">
+        <li style="color: blue;" onclick="toggleCAresult('CA result')"><a href="soma.php"><b>CA RESULT</b></a></li><br><br>
+        <li style="color: blue;" onclick="toggleResult('examination')"><a href="#"><b>FINAL RESULT</b</a></li><br><br><br>
+        <li style="color: blue;" onclick="toggleResult('notification')"><a href="#"><b>NOTIFICATION</b</a></li><br><br><br>
+        <li style="color: blue;" onclick="toggleResult('chat')"><a href="#"><b>CHAT</b></a></li><br><br><br><br><br><br>
+        <li style="color: blue;"><a href="view.php"><b>DISPLAY DATA</b</a></li>
+    </ul>
+  
+        </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menuList = document.getElementById("menuList");
+            menuList.style.display = (menuList.style.display === "none") ? "block" : "none";
+        }
+
+    </script>
+</body>
+</html>
+<font face="WELCOME TO THE STUDENT ALERT NOTIFICATION SYSTEM(SANS)" size="7"><br><br>
+<marquee style="color:blue" direction="left">WELCOME TO THE STUDENT ALERT NOTIFICATION SYSTEM(SANS)</marquee></font><center>
+<a href="log in.php" name="submit" class="btnRegister" style="background: #0099cc; font-size: 18px; border-radius: 10px; color: white">BACK</a></center>
+
